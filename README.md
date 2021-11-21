@@ -1,24 +1,27 @@
 # How to setup ESLint & Typescript
 I always have to spend hours to setup ESLint with Typescript, this is my notes
 
-## 1. Install the [required packages](https://www.npmjs.com/package/eslint-config-airbnb-typescript)
+## 1. Install `eslint-config-airbnb`:
 ```
-yarn add -D eslint-config-airbnb-typescript \
-            eslint-plugin-jest \
-            eslint-plugin-import@^2.22.0 \
-            eslint-plugin-jsx-a11y@^6.3.1 \
-            eslint-plugin-react@^7.20.3 \
-            eslint-plugin-react-hooks@^4.0.8 \
-            @typescript-eslint/eslint-plugin@^4.4.1 \
-	    @typescript-eslint/parser \
-	    @typescript-eslint/eslint-plugin
+npx install-peerdeps --dev eslint-config-airbnb
 ```
+Read more: [npm](https://www.npmjs.com/package/eslint-config-airbnb)
+
+## 2. Install `eslint-config-airbnb-typescript`:
+```
+npm install eslint-config-airbnb-typescript \
+            @typescript-eslint/eslint-plugin@^5.0.0 \
+            @typescript-eslint/parser@^5.0.0 \
+            --save-dev
+```
+Read more: [npm](https://www.npmjs.com/package/eslint-config-airbnb-typescript)
 
 ## 2. Configure it
 ```
 {
 	"parser": "@typescript-eslint/parser",
 	"extends": [
+		"airbnb",
 		"airbnb-typescript",
 		"airbnb/hooks",
 		"plugin:import/errors",
