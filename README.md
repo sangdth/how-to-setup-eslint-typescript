@@ -16,7 +16,7 @@ npm install eslint-config-airbnb-typescript \
 ```
 Read more: [npm](https://www.npmjs.com/package/eslint-config-airbnb-typescript)
 
-## 2. Configure it
+## 3. Add `.eslintrc` file:
 ```
 {
 	"parser": "@typescript-eslint/parser",
