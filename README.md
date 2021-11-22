@@ -14,6 +14,13 @@ npm install eslint-config-airbnb-typescript \
             @typescript-eslint/parser@^5.0.0 \
             --save-dev
 ```
+If you chose yarn on step #1:
+```
+yarn add -D eslint-config-airbnb-typescript \
+            @typescript-eslint/eslint-plugin@^5.0.0 \
+            @typescript-eslint/parser@^5.0.0
+```
+
 Read more: [npm](https://www.npmjs.com/package/eslint-config-airbnb-typescript)
 
 ## 3. Add `.eslintrc` file:
@@ -40,8 +47,7 @@ Read more: [npm](https://www.npmjs.com/package/eslint-config-airbnb-typescript)
 	"plugins": [
 		"@typescript-eslint",
 		"react-hooks",
-		"import",
-		"jest"
+		"import"
 	],
 	"settings": {
 		"import/resolver": {
@@ -54,15 +60,6 @@ Read more: [npm](https://www.npmjs.com/package/eslint-config-airbnb-typescript)
 					".json",
 					".native.js"
 				]
-			},
-			"eslint-import-resolver-custom-alias": {
-				"alias": {
-					"@assets": "./assets",
-					"@components": "./components",
-					"@lib": "./lib",
-					"@screens": "./screens",
-					"@stacks": "./stacks",
-				}
 			},
 			"typescript": {
 				"alwaysTryTypes": true,
