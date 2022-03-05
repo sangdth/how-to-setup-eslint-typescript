@@ -21,6 +21,8 @@ Read more: [npm](https://www.npmjs.com/package/eslint-config-airbnb-typescript)
 ```
 npm install --save-dev --save-exact eslint-config-prettier
 ```
+Read more: [github](https://github.com/prettier/eslint-config-prettier)
+
 ## 3. Add `.eslintrc` file:
 ```
 {
