@@ -19,7 +19,7 @@ Read more: [npm](https://www.npmjs.com/package/eslint-config-airbnb-typescript)
 
 ### 2.1 Bonus Prettier
 ```
-npm install --save-dev --save-exact eslint-config-prettier
+npm install --save-dev --save-exact eslint-config-prettier eslint-plugin-prettier prettier
 ```
 Read more: [github](https://github.com/prettier/eslint-config-prettier)
 
