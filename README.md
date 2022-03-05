@@ -17,6 +17,10 @@ npx install-peerdeps --dev --extra-args "--save-exact" eslint-config-airbnb-type
 ```
 Read more: [npm](https://www.npmjs.com/package/eslint-config-airbnb-typescript)
 
+### 2.1 Bonus Prettier
+```
+npm install --save-dev --save-exact eslint-config-prettier
+```
 ## 3. Add `.eslintrc` file:
 ```
 {
