@@ -3,7 +3,11 @@ I always have to spend hours to setup ESLint with Typescript, this is my notes
 
 ## 1. Install `eslint-config-airbnb`:
 ```
-npx install-peerdeps --dev eslint-config-airbnb
+npx install-peerdeps --dev eslint-config-airbnb --extra-args "--save-exact"
+```
+Not using React:
+```
+npx install-peerdeps --dev eslint-config-airbnb-base --extra-args "--save-exact"
 ```
 Read more: [npm](https://www.npmjs.com/package/eslint-config-airbnb)
 
@@ -12,13 +16,14 @@ Read more: [npm](https://www.npmjs.com/package/eslint-config-airbnb)
 npm install eslint-config-airbnb-typescript \
             @typescript-eslint/eslint-plugin@^5.0.0 \
             @typescript-eslint/parser@^5.0.0 \
-            --save-dev
+            --save-dev --save-exact
 ```
 If you chose yarn on step #1:
 ```
-yarn add -D eslint-config-airbnb-typescript \
-            @typescript-eslint/eslint-plugin@^5.0.0 \
-            @typescript-eslint/parser@^5.0.0
+yarn add eslint-config-airbnb-typescript \
+         @typescript-eslint/eslint-plugin@^5.0.0 \
+         @typescript-eslint/parser@^5.0.0 \
+	 -D -E
 ```
 
 Read more: [npm](https://www.npmjs.com/package/eslint-config-airbnb-typescript)
