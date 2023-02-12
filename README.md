@@ -93,3 +93,17 @@ Read more: [github](https://github.com/prettier/eslint-config-prettier)
 }
 
 ```
+## 4. Add `tsconfig.eslint.json` file:
+```
+{
+  "extends": "./tsconfig.json",
+  "exclude": [
+    "*.yaml",
+    ".next",
+    "dist",
+    "node_modules",
+    "public"
+  ],
+  "include": ["**/*.ts", "**/*.tsx", "**/*.js"]
+}
+```
