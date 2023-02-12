@@ -97,6 +97,9 @@ Read more: [github](https://github.com/prettier/eslint-config-prettier)
 ```
 {
   "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": true // ensure that nobody can accidentally use this config for a build
+  },
   "exclude": [
     "*.yaml",
     ".next",
