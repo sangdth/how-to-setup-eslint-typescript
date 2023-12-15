@@ -1,4 +1,4 @@
-# How to setup ESLint & Typescript
+# How to setup Airbnb ESLint & Typescript
 I always have to spend hours to setup ESLint with Typescript, this is my notes
 
 ## 1. Install `eslint-config-airbnb`:
